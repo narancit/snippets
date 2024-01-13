@@ -20,11 +20,6 @@ export default async function SnippetEditPage(props: SnippetEditPageProps) {
     // data not found
     if(!snippet) return notFound()
 
-    // update data
-
-
-    // show code editor
-
     return (
         <div className="flex flex-col gap-4">
             <PageTitle>Edit Snippet!</PageTitle>

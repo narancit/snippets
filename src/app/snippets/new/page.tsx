@@ -10,12 +10,10 @@ export default function SnippetCreatePage() {
     return (
         <form action={action} className="flex flex-col gap-4">
             <PageTitle>Create a Snippet!</PageTitle>
-            
-            {
-                formState.message ? (
-                    <div className="px-4 py-1 bg-red-200 border border-red-400 w-fit rounded">Error: {formState.message}</div>
-                ):null
-            }
+            {/* an error message */}
+            {formState.message ? (
+                <div className="px-4 py-1 bg-red-200 border border-red-400 w-fit rounded">Error: {formState.message}</div>
+            ):null}
 
             <label htmlFor="title">Title</label>
             <input 

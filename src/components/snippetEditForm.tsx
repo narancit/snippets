@@ -33,8 +33,8 @@ export default function SnippetEditForm ({ snippet }: SnippetEditFormProps) {
             <form action={editSnippetAction} className="flex gap-4">
                 <Button>Save Changes</Button>
                 <Link 
-                href={`/snippets/${snippet.id}`}
-                className="px-4 border rounded text-white bg-slate-800 hover:bg-white hover:text-slate-800 border-slate-800 flex items-center"
+                    href={`/snippets/${snippet.id}`}
+                    className="px-4 border rounded text-white bg-slate-800 hover:bg-white hover:text-slate-800 border-slate-800 flex items-center"
                 >Cancel</Link>
             </form>
         </div>
